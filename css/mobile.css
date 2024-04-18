@@ -1,0 +1,105 @@
+header .showcase-content{
+    padding: 1rem;;
+    text-align: center;
+}
+.ask{
+    /* color: red; */
+    color: var(--nd-color);
+    font-size: 4rem;
+    font-weight: bolder;
+
+}
+
+/* coming-soon */
+.sub-timer{
+    background-color: var(--st3-color);
+    width: 80px;
+    height: 80px;
+}
+.digit{
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+}
+.digit-name{
+    font-size: 1rem;
+}
+
+/* candidates */
+
+main .items{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item > img{
+    margin: auto;
+} 
+
+.item-heading{
+    top: -1.8rem;
+    left: 5.3rem;
+    padding: 1rem 2rem;
+    min-width: 180px;
+}
+.item-count{
+    top: 10rem;
+    left: 8.8rem;
+    padding: 1rem 1.5rem;
+}
+
+
+/* profile */
+#profile .container h1{
+    font-size: 1.5rem;
+}
+.profile-list li{
+    font-size: 1.2rem;
+}
+
+/* link: it is for me? */
+#profile .container a{
+    top: 70px;
+    display: inline-block;
+    left: 25px;
+}
+
+/* advantage */
+#advantage .items-advantage{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 2rem;
+    line-height: 1.5rem;
+}
+#advantage .container h1 span span .ask{
+    font-size: 5rem;
+}
+.item-advantage > div{
+    margin: 0.8rem;
+}
+
+/* about */
+.about-content{
+    flex-direction: column;
+}
+.about-content h1{
+    line-height: 2.8rem;
+}
+.about-content div img{
+    display: block;
+    margin: auto;
+   width: 100%;
+   height: 100%;
+}
+.about-content div:last-child{
+    width: 100%;
+    text-align: center;
+}
+
+/* footer */
+footer .container{
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.social-pages a i{
+    width: 15px;
+    margin-inline: 1rem;
+}
