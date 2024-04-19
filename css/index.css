@@ -144,7 +144,7 @@ header .showcase-content{
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+    /* width: 100%; */
     margin-top: 30px;
     justify-content: space-between;
     padding-inline: 0.8rem;
@@ -278,10 +278,9 @@ main .items{
     border-radius: 5px;
     min-width: 300px;
 }
-#advantage{
-    /* background-color: rgb(70, 70, 214); */
-    /* background-color: var(--st3-color); */
-}
+/* #advantage{
+    
+} */
 #advantage .items-advantage{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -316,7 +315,10 @@ main .items{
 .about-content div img{
     /* display: none; */
     border: 5px solid;
-    border-image: linear-gradient(to right, var(--st1-color) 60%, var(--st2-color) 40%) 30;
+    border-image: linear-gradient(to right, 
+    var(--st1-color) 60%, 
+    var(--st2-color) 40%
+    ) 30;
     /* box-shadow: -10px -8px 2px var(--nd-color); */
     /* border-top-right-radius: 50px;
     border-bottom-left-radius: 50px; */
@@ -332,7 +334,10 @@ main .items{
 
 /* footer */
 footer{
-   background-image: linear-gradient(to right, var(--st4-color), var(--st2-color));
+   background-image: linear-gradient(to right, 
+   var(--st4-color), 
+   var(--st2-color)
+   );
    color: white;
 }
 footer .container{
@@ -344,7 +349,11 @@ i{
     margin-left: 0.8rem;
 }
 a:hover{
-    background-image: linear-gradient(to right, var(--st4-color), var(--st3-color), var(--st1-color));
+    background-image: linear-gradient(to right, 
+    var(--st4-color), 
+    var(--st3-color), 
+    var(--st1-color)
+    );
 }
 .contact{
     position: absolute;

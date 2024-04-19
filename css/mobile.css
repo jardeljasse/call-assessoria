@@ -13,9 +13,11 @@ header .showcase-content{
 /* coming-soon */
 .sub-timer{
     background-color: var(--st3-color);
-    width: 80px;
-    height: 80px;
+    width: 4rem;
+    height: 20px;
+    border: 1px solid red;
 }
+
 .digit{
     font-size: 1.3rem;
     padding: 0.7rem 0;
