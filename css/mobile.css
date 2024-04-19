@@ -61,7 +61,7 @@ main .items{
 #profile .container a{
     top: 70px;
     display: inline-block;
-    left: 25px;
+    /* left: 25px; */
 }
 
 /* advantage */
