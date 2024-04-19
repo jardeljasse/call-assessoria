@@ -13,9 +13,8 @@ header .showcase-content{
 /* coming-soon */
 .sub-timer{
     background-color: var(--st3-color);
-    width: 4rem;
-    height: 20px;
-    border: 1px solid red;
+    width: 80px;
+    height: 80px;
 }
 
 .digit{
@@ -24,6 +23,7 @@ header .showcase-content{
 }
 .digit-name{
     font-size: 1rem;
+    /* padding: 2rem 0; */
 }
 
 /* candidates */
