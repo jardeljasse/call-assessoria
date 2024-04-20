@@ -34,19 +34,8 @@ main .items{
 
 .item > img{
     margin: auto;
+    width: 100%;
 } 
-
-.item-heading{
-    top: -1.8rem;
-    left: 8.7rem;
-    padding: 1rem 2rem;
-    min-width: 180px;
-}
-.item-count{
-    top: 10rem;
-    left: 12.2rem;
-    padding: 1rem 1.5rem;
-}
 
 
 /* profile */

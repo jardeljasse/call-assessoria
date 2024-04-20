@@ -113,7 +113,7 @@ header .showcase-content{
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 10rem;
     background-color: rgba(0, 255, 251, 0.3);
 }
 .ask{
@@ -144,13 +144,11 @@ header .showcase-content{
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* width: 100%; */
     margin-top: 30px;
     justify-content: space-between;
     align-items: start;
     padding-inline: 0.8rem;
-    /* gap: 0.7rem; */
-    border: 1px solid red;
+
 }
 .sub-timer{
     background-color: var(--st3-color);
@@ -210,8 +208,8 @@ main .items{
 
 .item-heading{
     position: absolute;
-    top: -2rem;
-    left: 4rem;
+    /* top: -2rem; */
+    /* left: 4rem; */
     color: #fff;
     font-weight: 3rem;
     background-color: var(--st1-color);
@@ -223,16 +221,16 @@ main .items{
 }
 .item-count{
     position: absolute;
-    top: 11rem;
-    left: 7rem;
+    top: 10rem;
+    /* left: 7rem; */
     display: block;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.2rem;
     background-color: var(--st1-color);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* width: 50px;
     height: 50px; */
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     border-bottom: 3px solid var(--nd-color);
 }

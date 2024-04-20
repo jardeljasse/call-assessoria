@@ -35,20 +35,10 @@ main p{
 
 .item > img{
     margin: auto;
+    width: 100%;
 } 
 
-.item-heading{
-    top: -1.8rem;
-    left: 4rem;
-    padding: 1rem 2rem;
-    min-width: 180px;
-    margin-inline: auto;
-}
-.item-count{
-    top: 10rem;
-    left: 7.7rem;
-    padding: 1rem 1.5rem;
-}
+
 
 
 /* profile */
