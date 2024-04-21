@@ -114,7 +114,9 @@ header .showcase-content{
     right: 0;
     left: 0;
     bottom: 10rem;
-    background-color: rgba(0, 255, 251, 0.3);
+    /* background-color: rgba(0, 0, 200, 0.3); */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 255, 251, 0.3); */
 }
 .ask{
     /* color: red; */
@@ -187,11 +189,10 @@ main .items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 1rem;
 }
 .item{
     position: relative;
-    margin-top: 5rem;;
+    /* margin-top: 5rem;; */
 }
 .img-item:hover{
     box-shadow: 0px 20px 20px var(--st3-color);
@@ -245,11 +246,9 @@ main .items{
     flex-direction: column;
     justify-content: center;
 }
-#profile .container h1{
+#profile .container h1, h2{
     color: white;
-}
-#profile .container h2{
-    color: white;
+    font-weight: 500;
 }
 #profile .container h2 span{
     color: var(--st1-color);
@@ -282,6 +281,9 @@ main .items{
     border-radius: 5px;
     min-width: 300px;
 }
+#profile .container a:hover{
+    background-image: linear-gradient(to right, var(--st4-color), var(--st3-color), var(--st1-color));
+}
 /* #advantage{
     
 } */
@@ -290,6 +292,11 @@ main .items{
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     line-height: 1.5rem;
+}
+#advantage .item-advantage:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
 }
 .item-advantage > div{
     margin: 1rem;
