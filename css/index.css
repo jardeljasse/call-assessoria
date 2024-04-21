@@ -293,11 +293,6 @@ main .items{
     gap: 2rem;
     line-height: 1.5rem;
 }
-#advantage .item-advantage:last-child{
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
 .item-advantage > div{
     margin: 1rem;
 }

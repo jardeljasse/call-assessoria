@@ -61,7 +61,7 @@ main p{
 
 /* advantage */
 #advantage .items-advantage{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(1, 100%);
     gap: 2rem;
     line-height: 1.5rem;
