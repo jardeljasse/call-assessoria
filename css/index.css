@@ -312,6 +312,7 @@ main .items{
 #about{
     /* background: url("../images/logo-social-media.png") no-repeat; */
     background-color: var(--nd-color);
+    background-color: #e4e4e7;
     background-size: cover;
 }
 .about-content{
@@ -323,7 +324,7 @@ main .items{
 }
 .about-content div img{
     /* display: none; */
-    border: 5px solid;
+    border: 2px solid;
     border-image: linear-gradient(to right, 
     var(--st1-color) 60%, 
     var(--st2-color) 40%
@@ -338,15 +339,16 @@ main .items{
 }
 .about-content div:last-child > p{
     margin-top: 1rem;
-    color: #fff;
+    color: #000;
 }
 
 /* footer */
 footer{
-   background-image: linear-gradient(to right, 
+   /* background-image: linear-gradient(to right, 
    var(--st4-color), 
    var(--st2-color)
-   );
+   ); */
+   background-color: var(--st1-color);
    color: white;
 }
 footer .container{
