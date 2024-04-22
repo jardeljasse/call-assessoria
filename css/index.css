@@ -109,7 +109,7 @@ header .showcase-content{
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 90%;
+    height: 90vh;
     top: 0;
     right: 0;
     left: 0;
@@ -295,6 +295,9 @@ main .items{
 }
 .item-advantage > div{
     margin: 1rem;
+}
+.advantage-list{
+    display: none;
 }
 .advantage-item{
     list-style: none;
