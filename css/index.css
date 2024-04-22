@@ -321,8 +321,7 @@ main .items{
     gap: 2rem;
 }
 .about-content div img{
-    /* display: none; */
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     border-image: linear-gradient(to right, 
     var(--st1-color) 60%, 
     var(--st2-color) 40%
@@ -341,6 +340,7 @@ main .items{
 .about-content div:last-child > p{
     margin-top: 1rem;
     color: #000;
+    text-align: justify;
 }
 
 /* footer */
@@ -349,7 +349,7 @@ footer{
    var(--st4-color), 
    var(--st2-color)
    ); */
-   background-color: var(--st1-color);
+   background-color: var(--st3-color);
    color: white;
 }
 footer .container{
@@ -384,20 +384,17 @@ a:hover{
     display: block;
     color: var(--st1-color);
     animation-name: whatsapp-moving;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 @keyframes whatsapp-moving{
     0%{
         color: var(--st1-color);
     }
-    30%{
+    100%{
         color: var(--st2-color)
     }
-    60%{
-        color: var(--st3-color)
-    }
     100%{
-        color: red;
+        color: #e0622f;
     }
 }
