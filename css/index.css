@@ -385,6 +385,7 @@ a:hover{
     color: var(--st1-color);
     animation-name: whatsapp-moving;
     animation-duration: 4s;
+    animation-fill-mode: backwards;
     animation-iteration-count: infinite;
 }
 @keyframes whatsapp-moving{
