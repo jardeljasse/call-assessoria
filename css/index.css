@@ -391,8 +391,8 @@ a:hover{
     0%{
         color: var(--st1-color);
     }
-    100%{
-        color: var(--st2-color)
+    80%{
+        color: var(--st1-color)
     }
     100%{
         color: #e0622f;
