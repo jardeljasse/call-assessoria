@@ -343,24 +343,10 @@ main .items{
     text-align: justify;
 }
 
-/* footer */
-footer{
-   /* background-image: linear-gradient(to right, 
-   var(--st4-color), 
-   var(--st2-color)
-   ); */
-   background-color: var(--st3-color);
-   color: white;
-}
-footer .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 i{
     margin-left: 0.8rem;
 }
-a:hover{
+a:hover:not(.social-pages a){
     background-image: linear-gradient(to right, 
     var(--st4-color), 
     var(--st3-color), 
@@ -399,3 +385,25 @@ a:hover{
         color: #e0622f;
     }
 }
+
+/* footer */
+footer{
+    /* background-image: linear-gradient(to right, 
+    var(--st4-color), 
+    var(--st2-color)
+    ); */
+    background-color: white;
+    color: var(--st1-color);
+ }
+ footer .container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ footer .social-pages a{
+    color: var(--st1-color)
+ }
+ footer .social-pages a:hover{
+    color: var(--nd-color);
+    transition: all 0.3s ease-in;
+ }
