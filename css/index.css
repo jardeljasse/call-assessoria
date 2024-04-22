@@ -121,7 +121,7 @@ header .showcase-content{
 .ask{
     /* color: red; */
     color: var(--nd-color);
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: bolder;
 
 }
@@ -238,7 +238,7 @@ main .items{
 
 /* profile */
 #profile{
-    margin-top: 5rem;
+    margin-top: 0em;
     background-color: #c75c31;
 }
 #profile .container {
@@ -317,25 +317,26 @@ main .items{
 }
 .about-content{
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     gap: 2rem;
-    /* height: 70vh; */
 }
 .about-content div img{
     /* display: none; */
-    border: 2px solid;
+    border-bottom: 1px solid;
     border-image: linear-gradient(to right, 
     var(--st1-color) 60%, 
     var(--st2-color) 40%
     ) 30;
-    /* box-shadow: -10px -8px 2px var(--nd-color); */
-    /* border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px; */
 }
 .about-content div:last-child{
     width: 600px;
     line-height: 1.5rem;
+}
+.about-content div:last-child h1{
+    line-height: 2rem;
+}
+.about-content div:last-child span ~ span{
+    font-size: 3rem;
 }
 .about-content div:last-child > p{
     margin-top: 1rem;

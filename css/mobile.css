@@ -58,14 +58,13 @@ main .items{
 #advantage .items-advantage{
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    gap: 2rem;
-    line-height: 1.5rem;
+   
 }
 #advantage .container h1 span span .ask{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .item-advantage > div{
-    margin: 0.8rem;
+    margin: 3rem;
 }
 
 /* about */

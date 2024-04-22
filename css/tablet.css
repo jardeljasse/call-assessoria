@@ -67,12 +67,7 @@ main p{
     gap: 2rem;
     line-height: 1.5rem;
 }
-#advantage .container h1 span span .ask{
-    font-size: 5rem;
-}
-.item-advantage > div{
-    margin: 0.8rem;
-}
+
 
 /* about */
 .about-content{
