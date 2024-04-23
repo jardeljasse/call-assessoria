@@ -142,8 +142,8 @@ header .showcase-content{
 
 /* coming-soon */
 #end-date .timer{
-    margin: auto;
     max-width: 1200px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
@@ -153,8 +153,8 @@ header .showcase-content{
 
 }
 .sub-timer{
-    background-color: var(--st3-color);
-    width: 220px;
+    background-color: rgba(11, 76, 11, 0.348);
+    width: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
@@ -162,17 +162,17 @@ header .showcase-content{
 }
 .digit{
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
     padding: 2.5rem 0;
 }
 .digit-name{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #fff;
     text-align: center;
     font-weight: lighter;
-    background-color: var(--st1-color);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0.6rem 0;
 }
 
