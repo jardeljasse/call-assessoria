@@ -1,5 +1,5 @@
 
-var target_mili_sec = new Date("Apr 30, 2024 23:59:0").getTime();
+var target_mili_sec = new Date("May 10, 2024 23:59:0").getTime();
 
 function timer(){
     var now_milli_sec = new Date().getTime()

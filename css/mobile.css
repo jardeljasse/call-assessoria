@@ -11,20 +11,6 @@ header .showcase-content{
 }
 
 /* coming-soon */
-.sub-timer{
-    background-color: var(--st3-color);
-    width: 80px;
-    height: 80px;
-}
-
-.digit{
-    font-size: 1.3rem;
-    padding: 0.7rem 0;
-}
-.digit-name{
-    font-size: 1rem;
-    /* padding: 2rem 0; */
-}
 
 /* candidates */
 
@@ -65,6 +51,14 @@ main .items{
 }
 .item-advantage > div{
     margin: 3rem;
+}
+
+/* clients */
+.slide-track {
+    grid-template-columns: repeat(1, 100%);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* about */

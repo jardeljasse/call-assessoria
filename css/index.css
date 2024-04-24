@@ -11,6 +11,7 @@
     --st4-color: #0ba13d;
     --nd-color: #e0622f;
     --rd-color: #18171795;
+    --bg-whiite: ##e4e4e7;
 }
 /* utilitaries classes */
 a{
@@ -27,10 +28,16 @@ a{
 .span-color{
     color: var(--nd-color);
 }
+.span-color-1{
+    color: var(--st1-color-color);
+}
 .heading{
     text-align: center;
     font-size: 1.8rem;
     margin-top: 1rem;
+}
+h1{
+    color: var(--st1-color);
 }
 .container{
     margin: auto;
@@ -84,12 +91,33 @@ header{
 
     animation-name: change-bg;
     animation-duration: 20s;
-    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in-out; */
     animation-iteration-count: infinite;
+}
+header div .changing-title::before{
+    content: " Voçê precisa de uma Assessoria Empresarial?";
+    animation-name: changing-title;
+    animation-duration: 20s;
+    animation-fill-mode: ease-out;
+    animation-iteration-count: infinite;
+    transform: translateX(-900px);
+}
+@keyframes changing-title{
+    30%{
+        content: "Nós somos a ZAMBEZE SERVIÇOS & AGROINDÚSTRIA, a solução do seu problema.";
+        transform: translateX(0);
+    }
+    60%{
+        content: "Connosco voçê será capaz de desenvolver o seu negócio.";
+    }
+    100%{
+        content: "Aproveite a oportunidade e candidate-se abaixo";
+    }
 }
 @keyframes change-bg{
     30%{
         background: url("../images/man-thought.jpg") no-repeat center center/cover;
+        /* kk */
     }
     60%{
         background: url("../images/woman-thought.jpg") no-repeat center center/cover;
@@ -149,31 +177,32 @@ header .showcase-content{
     margin-top: 30px;
     justify-content: space-between;
     align-items: start;
-    padding-inline: 0.8rem;
 
 }
 .sub-timer{
-    background-color: rgba(11, 76, 11, 0.348);
-    width: 100px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* background-color: rgba(11, 76, 11, 0.5); */
+    /* width: 100px; */
+    border: 1px solid var(--rd-color);
+    border-radius: 50%;
     overflow: hidden;
     margin: auto;
+    padding: 1.4rem;
+    width: 90px;
 }
 .digit{
-    color: #fff;
-    font-size: 1.5rem;
+    color: #000;
+    /* font-size: 1.5rem; */
     font-weight: lighter;
     text-align: center;
-    padding: 2.5rem 0;
+    /* padding: 1rem; */
 }
 .digit-name{
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1rem;
+    color: #000;
     text-align: center;
     font-weight: lighter;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.6rem 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* padding: 0.6rem 0; */
 }
 
 /* candidates */
@@ -202,9 +231,9 @@ main .items{
 }
 .item > img{
     display: block;
-    border: 1px solid var(--nd-color);
+    /* border: 1px solid var(--nd-color); */
     border-radius: 10px;
-    /* opacity: 0.8; */
+    /* opacity: 1; */
 }
 
 .item-heading{
@@ -213,7 +242,7 @@ main .items{
     /* left: 4rem; */
     color: #fff;
     font-weight: 3rem;
-    background-color: var(--st1-color);
+    background-color: rgba(11, 76, 11, 0.5);
     border-radius: 10px;
     padding: 1rem 2rem;
     text-align: center;
@@ -223,14 +252,10 @@ main .items{
 .item-count{
     position: absolute;
     top: 10rem;
-    /* left: 7rem; */
     display: block;
     color: #fff;
     font-size: 1.2rem;
-    background-color: var(--st1-color);
-    /* border-radius: 50%; */
-    /* width: 50px;
-    height: 50px; */
+    background-color: rgba(11, 76, 11, 0.5);
     padding: 0.5rem 1rem;
     text-align: center;
     border-bottom: 3px solid var(--nd-color);
@@ -239,26 +264,25 @@ main .items{
 /* profile */
 #profile{
     margin-top: 0em;
-    background-color: #c75c31;
+    /* background-color: #c75c31; */
 }
 #profile .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#profile .container h1, h2{
-    color: white;
-    font-weight: 500;
+#profile .container h1:first-child{
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 #profile .container h2 span{
     color: var(--st1-color);
 }
 .profile-list li{
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
     line-height: 3rem;
-    font-size: 1.6rem;
-    color: #fff;
+    font-size: 1.1rem;
 }
 .profile-list li::before{
     content: "\2714";
@@ -284,6 +308,54 @@ main .items{
 #profile .container a:hover{
     background-image: linear-gradient(to right, var(--st4-color), var(--st3-color), var(--st1-color));
 }
+
+/* ----- */
+
+/* sucess clients */
+.clients-content {
+    /* overflow: hidden; */
+    padding: 2rem;
+}
+.slide-track {
+    margin-top: 1rem;
+    border-top: 1px solid var(--nd-color);
+    border-bottom: 1px solid var(--nd-color);
+    /* width: calc(250px * 20); */
+    animation: scroll 10s linear infinite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+@keyframes scrol {
+    0% {
+        transform: translate3d(0);
+    }
+    100% {
+      transform: translate(calc(-250px * 5));
+    }
+}
+.slide-client {
+    /* height: 120px; */
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 0.9rem;
+    perspective: 100px;
+} 
+
+.slide-client img:hover {
+    transition: transform 0.3s ease-out;
+    transform: translateZ(20px);
+    cursor: pointer;
+}
+.slide-client img {
+    width: 100%;
+    /* display: inline-block; */
+  }
+
 /* #advantage{
     
 } */
@@ -306,6 +378,36 @@ main .items{
     content: "\2714";
     margin-inline: 5px;
 
+}
+/* DOUBTS */
+.block{
+    display: block;
+}
+#doubts{
+    /* background-color: #e2f1e4ee; */
+}
+#doubts .contact-list{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#doubts .contact-list p{
+    padding: 2rem;
+    background-color: #0b9037ab;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    padding: 0.8rem;
+    color: var(--st1-color);
+}
+.fa-phone{
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /* about */

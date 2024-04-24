@@ -14,15 +14,9 @@ header .showcase-content{
 /* coming-soon */
 .sub-timer{
     grid-template-columns: repeat(4, 1fr);
-    width: 150px;
-    height: 150px;
-}
-.digit{
-    font-size: 2rem;
-    /* padding: 0.7rem 0; */
-}
-.digit-name{
-    font-size: 1rem;
+    /* width: 150px;
+    height: 150px; */
+    align-items: center;
 }
 
 /* candidates */
@@ -60,6 +54,12 @@ main p{
     margin: auto;
 }
 
+/* clients */
+.slide-track {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 /* advantage */
 #advantage .items-advantage{
     /* display: grid; */
@@ -68,6 +68,18 @@ main p{
     line-height: 1.5rem;
 }
 
+/* doubts */
+#doubts .contact-list{
+    flex-direction: column;
+}
+#doubts .contact-list p{
+    padding: 2rem;
+    background-color: #0b9037ab;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+}
 
 /* about */
 .about-content{
