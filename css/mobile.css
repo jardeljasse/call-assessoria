@@ -11,7 +11,26 @@ header .showcase-content{
 }
 
 /* coming-soon */
+#end-date .timer{
+    max-width: 1200px;
+    margin: auto;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 1rem;
+}
+.sub-timer{
+    /* padding: 1.4rem; */
+    /* width: 90px; */
+}
+.digit{
 
+}
+.digit-name{
+    font-size: 1rem;
+
+}
 /* candidates */
 
 main .items{

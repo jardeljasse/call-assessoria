@@ -182,8 +182,8 @@ header .showcase-content{
 .sub-timer{
     /* background-color: rgba(11, 76, 11, 0.5); */
     /* width: 100px; */
-    border: 1px solid var(--rd-color);
-    border-radius: 50%;
+    border-bottom: 1px solid var(--st1-color);
+    /* border-bottom: 1o; */
     overflow: hidden;
     margin: auto;
     padding: 1.4rem;
@@ -398,7 +398,12 @@ main .items{
     font-weight: 600;
     border-radius: 5px;
 }
+#doubts .contact-list p:hover{
+    background-color: #0c5c27;
+    transition: all 0.2s ease-in;
+}
 h3{
+    font-size: 1.1rem;
     text-align: center;
     padding: 0.8rem;
     color: var(--st1-color);
