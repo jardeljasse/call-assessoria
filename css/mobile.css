@@ -1,13 +1,13 @@
+
+.heading, h1, h2, h3, h4{
+    font-size: 1.3rem;  
+}
+.ask{
+    font-size: 2rem;
+}
 header .showcase-content{
     padding: 1rem;;
     text-align: center;
-}
-.ask{
-    /* color: red; */
-    color: var(--nd-color);
-    font-size: 4rem;
-    font-weight: bolder;
-
 }
 
 /* coming-soon */
@@ -76,12 +76,14 @@ main .items{
 
 /* clients */
 .slide-track {
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     justify-content: center;
     align-items: center;
 }
-
+.clients-content h1{
+    text-align: left;
+}
 /* about */
 .about-content{
     flex-direction: column;
