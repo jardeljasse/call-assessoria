@@ -181,7 +181,7 @@ header .showcase-content{
 }
 .sub-timer{
     /* background-color: rgba(11, 76, 11, 0.5); */
-    /* width: 100px; */
+    /* max-width: 50px; */
     border-bottom: 1px solid var(--st1-color);
     /* border-bottom: 1o; */
     overflow: hidden;

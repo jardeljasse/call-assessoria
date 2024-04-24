@@ -23,6 +23,8 @@ header .showcase-content{
 .sub-timer{
     /* padding: 1.4rem; */
     /* width: 90px; */
+    max-width: 50px;
+    padding: 0.2rem 0;
 }
 .digit{
 
