@@ -76,10 +76,10 @@ main .items{
 
 /* clients */
 .slide-track {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .clients-content h1{
     text-align: left;
