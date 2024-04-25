@@ -80,9 +80,11 @@ main .items{
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin-inline: auto;
 }
 .clients-content h1{
     text-align: left;
+    font-size: 1.4rem;
 }
 /* about */
 .about-content{

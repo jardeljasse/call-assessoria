@@ -306,7 +306,7 @@ main .items{
     min-width: 300px;
 }
 #profile .container a:hover{
-    background-image: linear-gradient(to right, var(--st4-color), var(--st3-color), var(--st1-color));
+    /* background-image: linear-gradient(to right, var(--st4-color), var(--st3-color), var(--st1-color)); */
 }
 
 /* ----- */
@@ -321,7 +321,7 @@ main .items{
     border-top: 1px solid var(--nd-color);
     border-bottom: 1px solid var(--nd-color);
     /* width: calc(250px * 20); */
-    animation: scroll 10s linear infinite;
+    animation: scrol 90s linear infinite;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -329,7 +329,7 @@ main .items{
 .slide-track:hover {
     animation-play-state: paused;
 }
-@keyframes scrol {
+@keyframes scroll {
     0% {
         transform: translate3d(0);
     }
@@ -346,7 +346,7 @@ main .items{
     perspective: 100px;
 } 
 
-.slide-client img:hover {
+.slide-client img:hover, .slide-client a:hover {
     transition: transform 0.3s ease-out;
     transform: translateZ(20px);
     cursor: pointer;
@@ -354,6 +354,8 @@ main .items{
 .slide-client img {
     width: 150px;
     height: 120px;
+    display: block;
+    margin: auto;
     /* display: inline-block; */
   }
 
@@ -390,6 +392,7 @@ main .items{
 #doubts .contact-list{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 #doubts .contact-list p{
@@ -456,7 +459,7 @@ h3{
 i{
     margin-left: 0.8rem;
 }
-a:hover:not(.social-pages a){
+a:hover:not(.social-pages a, .slide-client a){
     background-image: linear-gradient(to right, 
     var(--st4-color), 
     var(--st3-color), 
