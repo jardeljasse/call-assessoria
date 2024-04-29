@@ -73,7 +73,24 @@ main .items{
 .item-advantage > div{
     margin: 3rem;
 }
-
+/* TABLES */
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    background-color: #fff5;
+    backdrop-filter: blur(60px);
+    overflow: scroll;
+}
+tr{
+    overflow: auto;
+}
+.img-td-logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
 /* clients */
 .slide-track {
    display: flex;

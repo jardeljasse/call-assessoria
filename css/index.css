@@ -396,7 +396,7 @@ table{
     backdrop-filter: blur(60px);
 }
 thead tr th:last-child{
-    width: 40%;
+    /* width: 40%; */
 }
 thead tr th:nth-child(2){
     width: auto;
