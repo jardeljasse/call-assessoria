@@ -312,6 +312,10 @@ main .items{
 /* ----- */
 
 /* sucess clients */
+#clients{
+    background-color: #e4e4e7;
+    padding: 2rem;
+}
 .clients-content {
     /* overflow: hidden; */
     padding: 2rem;
@@ -351,13 +355,14 @@ main .items{
     transform: translateZ(20px);
     cursor: pointer;
 }
-.slide-client img {
+.slide-client img, .img-td-logo {
     width: 150px;
     height: 120px;
     display: block;
     margin: auto;
     /* display: inline-block; */
   }
+
 
 /* #advantage{
     
@@ -382,6 +387,47 @@ main .items{
     margin-inline: 5px;
 
 }
+/* TABLE */
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    background-color: #fff5;
+    backdrop-filter: blur(60px);
+}
+thead tr th:last-child{
+    width: 40%;
+}
+thead tr th:nth-child(2){
+    width: auto;
+}
+th, td{
+    border: 1px solid gray;
+}
+td{
+    padding: 0.5rem;
+    border-left: none;
+    border-right: none;
+}
+th{
+    background-color: #0b9037ab;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.img-td-logo {
+    width: 100px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+.img-td-logo:hover{
+    transform: scale(2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
 /* DOUBTS */
 .block{
     display: block;
