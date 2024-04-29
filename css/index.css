@@ -357,6 +357,7 @@ main .items{
     align-items: center;
     padding: 0.9rem;
     perspective: 100px;
+    /* background-color: #ff0; */
 }
 
 .slide-client img:hover, .slide-client a:hover {
@@ -364,12 +365,11 @@ main .items{
     transform: translateZ(20px);
     cursor: pointer;
 }
-.slide-client img, .img-td-logo {
+.slide-client img {
     width: 150px;
     height: 120px;
     display: block;
-    margin: auto;
-    /* display: inline-block; */
+    margin-left: 33px;
   }
 
 
