@@ -1,5 +1,6 @@
 
-var target_mili_sec = new Date("May 10, 2024 23:59:0").getTime();
+var target_mili_sec = new Date("May 11, 2024 00:00:0").getTime();
+// var target_mili_sec = new Date("Apr 29, 2024 17:58:00").getTime();
 
 function timer(){
     var now_milli_sec = new Date().getTime()
@@ -14,5 +15,15 @@ function timer(){
     document.querySelector("#hour").innerHTML = hour;
     document.querySelector("#min").innerHTML = min;
     document.querySelector("#sec").innerHTML = sec;
-}
+
+    if(day === 0 && hour === 0 && min === 0 && sec === 0){
+        
+        let elTimer = document.querySelector(".timer")
+        elTimer.style.display = "none";
+
+        let elNotify = document.querySelector(".container-notify")
+         elNotify.style.display = "block";
+        }
+    }
 setInterval(timer, 1000)
+

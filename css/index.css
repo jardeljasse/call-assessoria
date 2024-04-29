@@ -33,7 +33,7 @@ a{
 }
 .heading{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-top: 1rem;
 }
 h1{
@@ -177,7 +177,6 @@ header .showcase-content{
     margin-top: 30px;
     justify-content: space-between;
     align-items: start;
-
 }
 .sub-timer{
     /* background-color: rgba(11, 76, 11, 0.5); */
@@ -204,7 +203,17 @@ header .showcase-content{
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* padding: 0.6rem 0; */
 }
-
+.container-notify{
+    padding: 4rem;
+    display: none;
+}
+.container-notify h1{
+    color: red;
+    font-size: 2rem;
+}
+.container-notify h2{
+    color: var(--st1-color);
+}
 /* candidates */
 main{
     background-color: #e4e4e7;
@@ -348,7 +357,7 @@ main .items{
     align-items: center;
     padding: 0.9rem;
     perspective: 100px;
-} 
+}
 
 .slide-client img:hover, .slide-client a:hover {
     transition: transform 0.3s ease-out;
@@ -365,13 +374,16 @@ main .items{
 
 
 /* #advantage{
-    
+
 } */
 #advantage .items-advantage{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     line-height: 1.5rem;
+}
+.item-advantage h2 {
+    font-size: 1.3rem;
 }
 .item-advantage > div{
     margin: 1rem;
@@ -385,7 +397,6 @@ main .items{
 .advantage-item::before{
     content: "\2714";
     margin-inline: 5px;
-
 }
 
 /* DOUBTS */
@@ -441,8 +452,8 @@ h3{
 }
 .about-content div img{
     /* border-bottom: 1px solid; */
-    border-image: linear-gradient(to right, 
-    var(--st1-color) 60%, 
+    border-image: linear-gradient(to right,
+    var(--st1-color) 60%,
     var(--st2-color) 40%
     ) 30;
 }
@@ -466,9 +477,9 @@ i{
     margin-left: 0.8rem;
 }
 a:hover:not(.social-pages a, .slide-client a){
-    background-image: linear-gradient(to right, 
-    var(--st4-color), 
-    var(--st3-color), 
+    background-image: linear-gradient(to right,
+    var(--st4-color),
+    var(--st3-color),
     var(--st1-color)
     );
 }
@@ -507,8 +518,8 @@ a:hover:not(.social-pages a, .slide-client a){
 
 /* footer */
 footer{
-    /* background-image: linear-gradient(to right, 
-    var(--st4-color), 
+    /* background-image: linear-gradient(to right,
+    var(--st4-color),
     var(--st2-color)
     ); */
     background-color: white;
